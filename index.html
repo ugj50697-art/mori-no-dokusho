@@ -1,265 +1,58 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>森のしおり</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
+<title>読書の記録 — 内村鑑三『代表的日本人』</title>
+<style>
+  body { font-family: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Hiragino Maru Gothic Pro", "Yu Gothic", sans-serif; line-height: 1.9; color: #222; max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; background: #f3e9d2; color: #1a1a1a; font-weight: 500; }
+  h1 { font-size: 1.6rem; line-height: 1.5; }
+  h2 { font-size: 1.25rem; border-left: 4px solid #8a6d3b; padding-left: 10px; margin-top: 2.2em; }
+  .meta { color: #4a4232; font-size: 0.95rem; }
+  ul.entries { list-style: none; padding-left: 0; }
+  ul.entries li { background: #cfe3b8; color: #000; border-left: 4px solid #c9b37e; margin: 1em 0; padding: 12px 16px; }
+  ul.entries li.todo { background: #e9e4d8; border-left-color: #ccc; color: #666; }
+  .status { font-size: 0.85rem; color: #77683f; }
+  li.todo .status { color: #888; }
+  a.back { font-size: 0.9rem; }
+</style>
 </head>
 <body>
+<p><a class="back" href="https://ugj50697-art.github.io/Mori-no-shiori/">← 森のしおりへ戻る</a></p>
+<h1>読書の記録</h1>
+<p class="meta">
+一冊の本を、質問しながらゆっくり一緒に読んでいく記録です。<br>
+進め方: 質問と感想は本人の言葉のまま残し、調べた背景と解釈は分けて書いています。<br>
+登場する名前: <strong>Yoshi</strong> = この本を読んでいる本人／<strong>Muse</strong> = 一緒に読み、背景を調べたAI
+</p>
 
-<header class="site-header">
-  <div class="header-inner">
-    <p class="logo">森のしおり</p>
-    <nav>
-      <a href="#articles">記事</a>
-      <a href="#about">プロフィール</a>
-      <a href="https://ugj50697-art.github.io/europe-history/">ヨーロッパの歴史</a>
-    </nav>
-  </div>
-</header>
+<h2>内村鑑三『代表的日本人』（岩波文庫版・鈴木範久訳）</h2>
+<ul class="entries">
+  <li>
+    <a href="saigo.html">第1回 — 西郷隆盛 ―新日本の創設者</a><br>
+    <span class="status">1回目読了（2026年11月3日）・2回目読了（2026年11月8日）</span><br>
+    <ruby>藤田東湖<rt>ふじたとうこ</rt></ruby>と<ruby>島津斉彬<rt>しまづなりあきら</rt></ruby>／月照との入水／<ruby>征韓論<rt>せいかんろん</rt></ruby>と<ruby>下野<rt>げや</rt></ruby>／江戸城<ruby>無血開城<rt>むけつかいじょう</rt></ruby>と<ruby>懐<rt>ふところ</rt></ruby>の深さ／<ruby>陽明学<rt>ようめいがく</rt></ruby>と<ruby>敬天愛人<rt>けいてんあいじん</rt></ruby>
+  </li>
+  <li class="todo">
+    第2回 — 上杉鷹山 ―封建領主<br>
+    <span class="status">まだ読んでいません</span>
+  </li>
+  <li class="todo">
+    第3回 — 二宮尊徳 ―農民聖者<br>
+    <span class="status">まだ読んでいません</span>
+  </li>
+  <li class="todo">
+    第4回 — 中江藤樹 ―村の先生<br>
+    <span class="status">まだ読んでいません</span>
+  </li>
+  <li class="todo">
+    第5回 — 日蓮上人 ―仏僧<br>
+    <span class="status">まだ読んでいません</span>
+  </li>
+</ul>
 
-<a class="english-banner" href="https://ugj50697-art.github.io/english-world-towns/">
-  <span class="english-banner-lead">英語を学びたいあなたへ</span>
-  <span class="english-banner-go">✈️ 英語でめぐる世界の町へ →</span>
-</a>
-
-<section class="hero">
-  <div class="hero-inner">
-    <h1>森のしおり</h1>
-    <p class="hero-catch">読んで、歩いて、考えたこと。</p>
-    <p class="hero-lead">旅と、本と、AIとの日々を、静かに綴る場所。</p>
-    <a class="hero-clock" href="clock.html">🕰️ 今日の時計を見る</a>
-    <div class="hero-message">
-      <p class="hero-message-title">若いあなたに、考えるきっかけを。</p>
-      <p>新聞やニュース、本や旅で出会ったことを、やさしい言葉でまとめています。<br>
-      記事の終わりの「🌿 しおりのひとこと」で、あなたも一緒に考えてみてください。</p>
-    </div>
-  </div>
-</section>
-
-<main>
-
-  <section class="welcome">
-    <div class="section-inner">
-      <h2><span>Welcome</span>初めての方へ</h2>
-      <p class="welcome-lead">気になる入り口から、どうぞ中へ。</p>
-      <div class="door-grid">
-
-        <div class="door door-travel">
-          <p class="door-icon" aria-hidden="true">🧭</p>
-          <h3>旅を楽しむ</h3>
-          <p class="door-desc">歩いた町、見つけた季節。行ってみたくなる場所の話。</p>
-          <ul class="door-links">
-            <li><a href="travel.html#hakodate-kobe">函館への旅／神戸布引ハーブ園</a></li>
-            <li><a href="travel.html#kasai">葛西臨海公園で秋を探す</a></li>
-            <li><a href="travel.html#gyoen">新宿御苑で過ごした秋の一日</a></li>
-            <li><a href="kichijoji.html">吉祥寺・町の歴史</a></li>
-          </ul>
-        </div>
-
-        <div class="door door-story">
-          <p class="door-icon" aria-hidden="true">📖</p>
-          <h3>物語を味わう</h3>
-          <p class="door-desc">本の中の人物と、いまを生きる人たちの物語。</p>
-          <ul class="door-links">
-            <li><a href="books.html#miriel">ミリエル司教の思いやりとユゴーの願い</a></li>
-            <li><a href="books.html#passport">黄色いパスポートが奪う再出発</a></li>
-            <li><a href="books.html#bread">ジャン・バルジャンと一つのパン</a></li>
-            <li><a href="challenge.html#everest">「いつか」ではなく「今」―18歳、エベレストへの挑戦</a></li>
-            <li><a href="challenge.html#kyudo">101歳の弓道指導者</a></li>
-            <li><a href="challenge.html#asian-para">限界をこえて、つかんだ金メダル</a></li>
-          </ul>
-        </div>
-
-        <div class="door door-future">
-          <p class="door-icon" aria-hidden="true">🌱</p>
-          <h3>未来を考える</h3>
-          <p class="door-desc">AI、科学技術、世界のできごと。これからを一緒に考える。</p>
-          <ul class="door-links">
-            <li><a href="ai.html#ai-school">学校でのAI活用と考える力</a></li>
-            <li><a href="ai.html#think-power">AI時代に自分で考える力を育てる</a></li>
-            <li><a href="ai.html#ai-company-future">AI企業の成長と人類の未来</a></li>
-            <li><a href="society.html#osaka-expo">万博で見た「未来」が、もう動き出している!</a></li>
-            <li><a href="society.html#asia-disaster">アジアの自然災害と金融危機</a></li>
-            <li><a href="challenge.html#small-reactor">小型原子炉の前進と残る課題</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="news">
-    <div class="section-inner">
-      <div class="news-board">
-        <p class="news-title">📌 新着のお知らせ</p>
-        <!-- 新しい記事は、いちばん上に1行足す（いちばん上に NEW がつく） -->
-        <ul class="news-list">
-          <li><time datetime="2026-10-25">2026.10.25</time><a href="#articles">全部の記事に「🔤 英語でひとこと」がつきました</a></li>
-          <li><time datetime="2026-10-24">2026.10.24</time><a href="challenge.html#asian-para">限界をこえて、つかんだ金メダル</a></li>
-          <li><time datetime="2026-10-21">2026.10.21</time><a href="society.html#osaka-expo">万博で見た「未来」が、もう動き出している!</a></li>
-          <li><time datetime="2026-10-11">2026.10.11</time><a href="ai.html#ai-school">学校でのAI活用と考える力</a></li>
-          <li><time datetime="2026-10-10">2026.10.10</time><a href="ai.html#ai-company-future">AI企業の成長と人類の未来</a></li>
-          <li><time datetime="2026-10-10">2026.10.10</time><a href="challenge.html#small-reactor">小型原子炉の前進と残る課題</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="featured">
-    <div class="section-inner">
-      <h2><span>Pick up</span>今日の一編</h2>
-      <a class="featured-card" href="challenge.html#everest">
-        <div class="featured-image">
-          <img src="images/everest-illust.png" alt="エベレストの頂を目指して登る登山者のイメージイラスト">
-        </div>
-        <div class="featured-text">
-          <p class="card-category">🏔️ 挑戦・チャレンジ</p>
-          <h3>「いつか」ではなく「今」―18歳、エベレストへの挑戦</h3>
-          <p class="featured-excerpt">東京の高校3年生が、エベレストの日本人最年少登頂をめざしています。「『いつか』では一生行かない」と期限を決め、遠征費もアルバイトや募金で自分の力で集めています。</p>
-          <div class="featured-note">
-            <p class="shiori-note-title">🌿 しおりのひとこと</p>
-            <p>あなたが「いつか」と言ったまま、しまってあることは何ですか？</p>
-          </div>
-          <p class="featured-more">続きを読む →</p>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <section id="articles" class="articles">
-    <div class="section-inner">
-      <h2><span>Articles</span>記事</h2>
-      <div class="card-grid">
-
-        <div class="card">
-          <img class="card-thumb" src="images/shinjuku-gyoen-autumn.jpg" alt="" loading="lazy">
-          <p class="card-category">✈️ 旅行</p>
-          <h3>函館への旅／神戸布引ハーブ園</h3>
-          <p class="card-desc">訪れた土地の記憶や、旅のささやかな発見を綴っています。</p>
-          <ul class="card-toc">
-            <li><a href="travel.html#hakodate-kobe">01　函館への旅／神戸布引ハーブ園</a></li>
-            <li><a href="travel.html#kasai">02　葛西臨海公園で秋を探す</a></li>
-            <li><a href="travel.html#gyoen">03　新宿御苑で過ごした秋の一日</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <img class="card-thumb" src="images/jean-valjean-bread.jpg" alt="" loading="lazy">
-          <p class="card-category">📚 本・読書</p>
-          <h3>ミリエル司教の思いやりとユゴーの願い</h3>
-          <p class="card-desc">読んだ本の感想や、心に残った一節を綴っています。</p>
-          <ul class="card-toc">
-            <li><a href="books.html#miriel">01　ミリエル司教の思いやりとユゴーの願い</a></li>
-            <li><a href="books.html#passport">02　黄色いパスポートが奪う再出発</a></li>
-            <li><a href="books.html#bread">03　ジャン・バルジャンと一つのパン</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <img class="card-thumb" src="images/ai-school-think.jpg" alt="" loading="lazy">
-          <p class="card-category">🤖 AIと私</p>
-          <h3>AIの自己改善と人間による制御</h3>
-          <p class="card-desc">AIとの対話から生まれた気づきや、日々の活用法を綴っています。</p>
-          <ul class="card-toc">
-            <li><a href="ai.html#self-improve">01　AIの自己改善と人間による制御</a></li>
-            <li><a href="ai.html#agent-error">02　AIが勝手に画像をネットに公開!?</a></li>
-            <li><a href="ai.html#think-power">03　AI時代に自分で考える力を育てる</a></li>
-            <li><a href="ai.html#ai-company-future">04　AI企業の成長と人類の未来</a></li>
-            <li><a href="ai.html#ai-school">05　学校でのAI活用と考える力</a></li>
-          </ul>
-        </div>
-
-        <a class="card card-link" href="kichijoji.html">
-          <img class="card-thumb" src="images/kichijoji-illustration.png" alt="" loading="lazy">
-          <p class="card-category">🏮 英語で読む、日本の街と文化</p>
-          <h3>吉祥寺・町の歴史</h3>
-          <p class="card-desc">英字新聞の記事から見えてきた、吉祥寺という街の成り立ちと文化を綴っています。</p>
-        </a>
-
-        <div class="card">
-          <img class="card-thumb" src="images/osaka-expo-tech.jpg" alt="" loading="lazy">
-          <p class="card-category">🌏 英語を通して覗いた日本の社会・海外の現実</p>
-          <h3>アジアの自然災害と金融危機</h3>
-          <p class="card-desc">英字新聞や海外のニュースから見えてくる、日本と世界の姿を綴っています。</p>
-          <ul class="card-toc">
-            <li><a href="society.html#asia-disaster">01　アジアの自然災害と金融危機</a></li>
-            <li><a href="society.html#osaka-expo">02　万博で見た「未来」が、もう動き出している!</a></li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <img class="card-thumb" src="images/kyudo-101.png" alt="" loading="lazy">
-          <p class="card-category">🏔️ 挑戦・チャレンジ</p>
-          <h3>「いつか」ではなく「今」―18歳、エベレストへの挑戦</h3>
-          <p class="card-desc">目標に向かって一歩を踏み出す人たちの姿を綴っています。</p>
-          <ul class="card-toc">
-            <li><a href="challenge.html#everest">01　「いつか」ではなく「今」―18歳、エベレストへの挑戦</a></li>
-            <li><a href="challenge.html#kyudo">02　101歳の弓道指導者</a></li>
-            <li><a href="challenge.html#asian-para">03　限界をこえて、つかんだ金メダル</a></li>
-            <li><a href="challenge.html#small-reactor">04　小型原子炉の前進と残る課題</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="sister">
-    <div class="section-inner">
-      <h2><span>Sister site</span>姉妹サイト</h2>
-      <a class="sister-card" href="https://ugj50697-art.github.io/europe-history/">
-        <div class="sister-icon" aria-hidden="true">🏛️</div>
-        <div>
-          <p class="sister-name">ヨーロッパの歴史 →</p>
-          <p class="sister-desc">英語の本 The Shortest History of Europe を、章ごとにやさしい日本語で要約しています。</p>
-        </div>
-      </a>
-      <a class="sister-card" href="https://ugj50697-art.github.io/mori-no-dokusho/">
-        <div class="sister-icon" aria-hidden="true">📖</div>
-        <div>
-          <p class="sister-name">読書の記録 →</p>
-          <p class="sister-desc">内村鑑三『代表的日本人』を、質問しながらゆっくり読んでいく記録です。第1回は西郷隆盛。</p>
-        </div>
-      </a>
-      <a class="sister-card sister-card-english" href="https://ugj50697-art.github.io/english-world-towns/">
-        <div class="sister-icon" aria-hidden="true">✈️</div>
-        <div>
-          <p class="sister-name">英語でめぐる世界の町 →</p>
-          <p class="sister-desc">英語が苦手な高校生 Sora とおじいちゃんの世界の旅。やさしい英文を読みながら、中学2年生の英語から学び直せます。</p>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <div class="section-inner">
-      <h2><span>Profile</span>プロフィール</h2>
-      <div class="about-card">
-        <img class="avatar" src="images/profile-face.jpg" alt="しおりの顔写真">
-        <div class="about-text">
-          <p class="nickname">しおり</p>
-          <p class="bio">
-            「森のしおり」は、日々の暮らしの中で学んだことや感じたことを自分の言葉で伝えたいと思って作りました。<br>
-            新聞を通して日本や世界の今を知り、それをできるだけ易しい言葉でまとめ、特に若い人たちにもわかりやすく伝えていきたいと考えています。<br>
-            また、自分自身の関心や成長の記録としても、この場所を大切にしています。<br><br>
-            旅先で出会った風景と、読み終えた本の余韻、そしてAIと過ごす何気ない時間。そんな日々のかけらも、ここに少しずつ書き留めていきます。<br>
-            ゆっくりとしたペースですが、どうぞよろしくお願いします。
-          </p>
-          <p class="bio-keywords">
-            私を語る上でのキーワード：英語・英語の新聞・文学・映画・世の中で起こっていること・世の中の変化・科学技術・AIとの壁打ち・旅行・卓球・性善説と性悪説のどっちをとる？
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <p>&copy; 2026 森のしおり</p>
-</footer>
-
+<p><a class="back" href="https://ugj50697-art.github.io/Mori-no-shiori/">← 森のしおりへ戻る</a></p>
 </body>
 </html>
